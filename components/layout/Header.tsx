@@ -24,7 +24,7 @@ export function Header() {
       <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between gap-5 px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" aria-label="Synopsis Global home">
           <Image
-            src="/logo.jpeg"
+            src="/Rlogo.jpeg"
             alt="Synopsis Global Logo"
             width={1254}
             height={1254}
