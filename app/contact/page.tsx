@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Clock, Mail, MapPin, MessageCircle, Phone, UserRound } from "lucide-react";
 import { Button } from "@/components/common/Button";
+import { ContactLeadForm } from "@/components/common/ContactLeadForm";
 import { InquiryButton } from "@/components/common/InquiryButton";
 import { Reveal } from "@/components/common/Reveal";
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { services } from "@/data/services";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -37,40 +37,13 @@ export default function ContactPage() {
       <section className="py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
           <Reveal>
-            <form className="grid gap-5 rounded-sm border border-slate-200 bg-white p-6 shadow-sm" aria-label="Contact form">
+            <div>
               <SectionHeading align="left" title="Book a consultation" description="Share your details and our advisory team will review the best next step for your goal." />
-              {[
-                { label: "Name", type: "text" },
-                { label: "Email", type: "email" },
-                { label: "Phone", type: "tel" },
-              ].map((field) => (
-                <label key={field.label} className="grid gap-2 text-sm font-semibold text-[#082B6A]">
-                  {field.label}
-                  <input type={field.type} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]" />
-                </label>
-              ))}
-              <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
-                Service Interested In
-                <select className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]">
-                  {services.map((service) => (
-                    <option key={service.slug}>{service.title}</option>
-                  ))}
-                </select>
-              </label>
-              <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
-                Message
-                <textarea rows={5} className="rounded-sm border border-slate-300 px-4 py-3 text-slate-800 outline-none transition focus:border-[#C9A227]" />
-              </label>
-              <button
-                type="submit"
-                className="min-h-12 rounded-sm bg-[#082B6A] px-5 text-sm font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#061f4f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#082B6A]"
-              >
-                Submit Enquiry
-              </button>
+              <ContactLeadForm />
               <InquiryButton variant="secondary" className="w-full">
                 Open Inquiry Form
               </InquiryButton>
-            </form>
+            </div>
           </Reveal>
           <Reveal delay={0.08}>
             <aside className="space-y-6">

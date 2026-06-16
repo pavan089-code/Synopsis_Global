@@ -2,7 +2,7 @@
 
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { services } from "@/data/services";
+import { ConsultationForm } from "@/components/common/ConsultationForm";
 
 export const inquiryEventName = "synopsis:open-inquiry";
 
@@ -12,7 +12,7 @@ export function openInquiryModal(service?: string) {
 
 export function InquiryModal() {
   const [open, setOpen] = useState(false);
-  const [service, setService] = useState(services[0]?.title ?? "");
+  const [service, setService] = useState("");
 
   useEffect(() => {
     function handleOpen(event: Event) {
@@ -46,50 +46,7 @@ export function InquiryModal() {
         <h2 id="inquiry-title" className="mt-3 pr-12 text-2xl font-semibold text-[#082B6A]">
           Speak with Synopsis Global
         </h2>
-        <form
-          className="mt-6 grid gap-4"
-          onSubmit={(event) => {
-            event.preventDefault();
-            setOpen(false);
-          }}
-        >
-          <div className="grid gap-4 sm:grid-cols-2">
-            <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
-              Name
-              <input required type="text" className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]" />
-            </label>
-            <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
-              Phone
-              <input required type="tel" className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]" />
-            </label>
-          </div>
-          <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
-            Email
-            <input required type="email" className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]" />
-          </label>
-          <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
-            Service Interested In
-            <select
-              value={service}
-              onChange={(event) => setService(event.target.value)}
-              className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]"
-            >
-              {services.map((item) => (
-                <option key={item.slug}>{item.title}</option>
-              ))}
-            </select>
-          </label>
-          <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
-            Message
-            <textarea rows={4} className="rounded-sm border border-slate-300 px-4 py-3 text-slate-800 outline-none transition focus:border-[#C9A227]" />
-          </label>
-          <button
-            type="submit"
-            className="min-h-12 rounded-sm bg-[#082B6A] px-5 text-sm font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#061f4f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#082B6A]"
-          >
-            Submit Inquiry
-          </button>
-        </form>
+        <ConsultationForm initialService={service} onSuccess={() => setOpen(false)} />
       </div>
     </div>
   );

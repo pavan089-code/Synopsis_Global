@@ -1,8 +1,5 @@
-import type { Metadata } from "next";
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
-import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
-import { InquiryModal } from "@/components/common/InquiryModal";
+import type { Metadata, Viewport } from "next";
+import { SiteChrome } from "@/components/layout/SiteChrome";
 import { siteConfig } from "@/data/site";
 import "./globals.css";
 
@@ -18,6 +15,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/favicon_io/favicon.ico", sizes: "any" },
+      { url: "/favicon_io/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon_io/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/favicon_io/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/favicon_io/site.webmanifest",
   openGraph: {
     title: "Synopsis Global",
     description: siteConfig.tagline,
@@ -42,6 +48,10 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#082B6A",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,11 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="flex min-h-full flex-col">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <InquiryModal />
-        <FloatingWhatsApp />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );
