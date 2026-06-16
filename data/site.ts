@@ -1,0 +1,22 @@
+export const siteConfig = {
+  name: "Synopsis Global",
+  tagline: "Connecting Talent, Education & Global Opportunities",
+  url: "https://synopsisglobal.com",
+  phone: "+91 9642201234",
+  whatsappNumber: "919642201234",
+  whatsappMessage: "Hello Synopsis Global, I would like to know more about your services.",
+  email: "info@synopsisglobal.com",
+  contactPerson: "Yeshwanth",
+  address: "Synopsis Global Office, Hyderabad, India",
+  businessHours: "Monday-Saturday, 9 AM - 6 PM",
+  keywords: [
+    "Recruitment Services",
+    "Overseas Education",
+    "Study Abroad",
+    "Study Abroad Consultancy",
+    "Work Visa",
+    "Immigration Services",
+    "Workforce Solutions",
+    "International Hiring",
+  ],
+};
