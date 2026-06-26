@@ -6,11 +6,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Synopsis Global | International Recruitment, Education and Immigration Consultancy",
+    default: "Synopsis Global | International Education and Immigration Consultancy",
     template: "%s | Synopsis Global",
   },
   description:
-    "Synopsis Global connects talent, education, and global opportunities through recruitment services, study abroad guidance, immigration services, and workforce solutions.",
+    "Synopsis Global guides students and professionals through study abroad, university admissions, visa counselling, and immigration pathways.",
   keywords: ["Synopsis Global", ...siteConfig.keywords],
   alternates: {
     canonical: "/",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#082B6A",
+  themeColor: "#16325B",
 };
 
 export default function RootLayout({

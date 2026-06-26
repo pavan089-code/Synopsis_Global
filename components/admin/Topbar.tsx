@@ -9,11 +9,11 @@ export function Topbar({ title }: { title?: string }) {
   return (
     <header className="flex min-h-16 flex-wrap items-center justify-between gap-4 border-b border-slate-200 bg-white px-5">
       <div>
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#C9A227]">Admin Panel</p>
-        <h1 className="text-xl font-semibold text-[#082B6A]">{title ?? "Synopsis Global"}</h1>
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#B08D57]">Admin Panel</p>
+        <h1 className="text-xl font-semibold text-[#16325B]">{title ?? "Synopsis Global"}</h1>
       </div>
       <div className="flex items-center gap-2 text-sm font-semibold text-slate-600">
-        <ShieldCheck className="size-5 text-[#C9A227]" aria-hidden="true" />
+        <ShieldCheck className="size-5 text-[#B08D57]" aria-hidden="true" />
         {user?.email ?? "Authenticated admin"}
       </div>
     </header>

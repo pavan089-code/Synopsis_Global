@@ -58,8 +58,8 @@ export function BlogEditor({ post, onSaved }: { post?: BlogPost | null; onSaved?
   return (
     <form onSubmit={handleSubmit} className="grid gap-4 border border-slate-200 bg-white p-5 shadow-sm">
       <div>
-        <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#C9A227]">{post ? "Edit Blog" : "Create Blog"}</p>
-        <h2 className="mt-1 text-xl font-semibold text-[#082B6A]">{post ? post.title : "New blog post"}</h2>
+        <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#B08D57]">{post ? "Edit Blog" : "Create Blog"}</p>
+        <h2 className="mt-1 text-xl font-semibold text-[#16325B]">{post ? post.title : "New blog post"}</h2>
       </div>
       {error ? <ErrorMessage message={error} /> : null}
       <div className="grid gap-4 md:grid-cols-2">
@@ -73,10 +73,10 @@ export function BlogEditor({ post, onSaved }: { post?: BlogPost | null; onSaved?
         <input type="file" accept="image/*" onChange={(event) => setUpload(event.target.files?.[0] ?? null)} className="min-h-11 border border-slate-300 px-3 py-2" />
       </div>
       <label className="flex items-center gap-3 text-sm font-semibold text-slate-700">
-        <input type="checkbox" checked={form.published} onChange={(event) => updateField("published", event.target.checked)} className="size-4 accent-[#082B6A]" />
+        <input type="checkbox" checked={form.published} onChange={(event) => updateField("published", event.target.checked)} className="size-4 accent-[#16325B]" />
         Published
       </label>
-      <button type="submit" disabled={loading} className="min-h-11 bg-[#082B6A] px-5 text-sm font-bold uppercase tracking-[0.08em] text-white disabled:opacity-60">
+      <button type="submit" disabled={loading} className="min-h-11 bg-[#16325B] px-5 text-sm font-bold uppercase tracking-[0.08em] text-white disabled:opacity-60">
         {loading ? "Saving..." : post ? "Update Blog" : "Create Blog"}
       </button>
     </form>

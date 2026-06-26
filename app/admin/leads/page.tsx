@@ -44,7 +44,7 @@ export default function AdminLeadsPage() {
   const paged = filtered.slice((page - 1) * pageSize, page * pageSize);
 
   const columns: DataTableColumn<ContactLead>[] = [
-    { key: "name", header: "Name", cell: (item) => <span className="font-semibold text-[#082B6A]">{item.name}</span> },
+    { key: "name", header: "Name", cell: (item) => <span className="font-semibold text-[#16325B]">{item.name}</span> },
     { key: "email", header: "Email", cell: (item) => item.email },
     { key: "phone", header: "Phone", cell: (item) => item.phone },
     { key: "service", header: "Service", cell: (item) => item.service },
@@ -65,7 +65,7 @@ export default function AdminLeadsPage() {
       header: "Actions",
       cell: (item) => (
         <div className="flex gap-2">
-          <button type="button" onClick={() => setSelected(item)} className="inline-flex size-9 items-center justify-center border border-slate-200 text-[#082B6A]" aria-label={`View ${item.name}`}>
+          <button type="button" onClick={() => setSelected(item)} className="inline-flex size-9 items-center justify-center border border-slate-200 text-[#16325B]" aria-label={`View ${item.name}`}>
             <Eye className="size-4" aria-hidden="true" />
           </button>
           <button type="button" onClick={() => deleteLead(item.id)} className="inline-flex size-9 items-center justify-center border border-red-200 text-red-600" aria-label={`Delete ${item.name}`}>
@@ -95,11 +95,11 @@ export default function AdminLeadsPage() {
       {selected ? (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 p-4" role="dialog" aria-modal="true">
           <div className="w-full max-w-xl bg-white p-6 shadow-xl">
-            <h2 className="text-2xl font-semibold text-[#082B6A]">{selected.name}</h2>
+            <h2 className="text-2xl font-semibold text-[#16325B]">{selected.name}</h2>
             <p className="mt-2 text-sm text-slate-600">{selected.email} | {selected.phone}</p>
-            <p className="mt-4 font-semibold text-[#082B6A]">{selected.service}</p>
+            <p className="mt-4 font-semibold text-[#16325B]">{selected.service}</p>
             <p className="mt-3 whitespace-pre-line text-slate-700">{selected.message}</p>
-            <button type="button" onClick={() => setSelected(null)} className="mt-6 min-h-11 bg-[#082B6A] px-5 text-sm font-bold uppercase tracking-[0.08em] text-white">Close</button>
+            <button type="button" onClick={() => setSelected(null)} className="mt-6 min-h-11 bg-[#16325B] px-5 text-sm font-bold uppercase tracking-[0.08em] text-white">Close</button>
           </div>
         </div>
       ) : null}

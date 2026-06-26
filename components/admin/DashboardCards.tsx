@@ -17,11 +17,11 @@ export function DashboardCards({ totals }: { totals: Record<(typeof cardConfig)[
           <div key={card.key} className="border border-slate-200 bg-white p-5 shadow-sm">
             <div className="flex items-center justify-between">
               <p className="text-sm font-semibold text-slate-500">{card.label}</p>
-              <span className="inline-flex size-10 items-center justify-center rounded-sm bg-[#082B6A] text-white">
+              <span className="inline-flex size-10 items-center justify-center rounded-sm bg-[#16325B] text-white">
                 <Icon className="size-5" aria-hidden="true" />
               </span>
             </div>
-            <p className="mt-5 text-3xl font-semibold text-[#082B6A]">{totals[card.key]}</p>
+            <p className="mt-5 text-3xl font-semibold text-[#16325B]">{totals[card.key]}</p>
           </div>
         );
       })}

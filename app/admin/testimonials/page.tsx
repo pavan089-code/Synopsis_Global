@@ -36,7 +36,7 @@ export default function AdminTestimonialsPage() {
   }
 
   const columns: DataTableColumn<Testimonial>[] = [
-    { key: "name", header: "Name", cell: (item) => <span className="font-semibold text-[#082B6A]">{item.name}</span> },
+    { key: "name", header: "Name", cell: (item) => <span className="font-semibold text-[#16325B]">{item.name}</span> },
     { key: "designation", header: "Designation", cell: (item) => item.designation },
     { key: "country", header: "Country", cell: (item) => item.country },
     { key: "testimonial", header: "Testimonial", cell: (item) => <span className="line-clamp-2">{item.testimonial}</span> },
@@ -45,7 +45,7 @@ export default function AdminTestimonialsPage() {
       header: "Actions",
       cell: (item) => (
         <div className="flex gap-2">
-          <button type="button" onClick={() => setEditing(item)} className="inline-flex size-9 items-center justify-center border border-slate-200 text-[#082B6A]" aria-label={`Edit ${item.name}`}>
+          <button type="button" onClick={() => setEditing(item)} className="inline-flex size-9 items-center justify-center border border-slate-200 text-[#16325B]" aria-label={`Edit ${item.name}`}>
             <Edit3 className="size-4" aria-hidden="true" />
           </button>
           <button type="button" onClick={() => deleteTestimonial(item.id)} className="inline-flex size-9 items-center justify-center border border-red-200 text-red-600" aria-label={`Delete ${item.name}`}>

@@ -40,7 +40,7 @@ export default function AdminConsultationsPage() {
   }, [items, query, status]);
 
   const columns: DataTableColumn<Consultation>[] = [
-    { key: "name", header: "Name", cell: (item) => <span className="font-semibold text-[#082B6A]">{item.name}</span> },
+    { key: "name", header: "Name", cell: (item) => <span className="font-semibold text-[#16325B]">{item.name}</span> },
     { key: "email", header: "Email", cell: (item) => item.email },
     { key: "phone", header: "Phone", cell: (item) => item.phone },
     { key: "service", header: "Service", cell: (item) => item.service },

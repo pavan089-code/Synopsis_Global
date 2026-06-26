@@ -37,13 +37,13 @@ export function InquiryModal() {
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className="absolute right-4 top-4 inline-flex size-10 items-center justify-center rounded-sm border border-slate-200 text-[#082B6A] transition hover:border-[#C9A227]"
+          className="absolute right-4 top-4 inline-flex size-10 items-center justify-center rounded-sm border border-slate-200 text-[#16325B] transition hover:border-[#B08D57]"
           aria-label="Close inquiry form"
         >
           <X aria-hidden="true" className="size-5" />
         </button>
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#C9A227]">Inquiry</p>
-        <h2 id="inquiry-title" className="mt-3 pr-12 text-2xl font-semibold text-[#082B6A]">
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B08D57]">Inquiry</p>
+        <h2 id="inquiry-title" className="mt-3 pr-12 text-2xl font-semibold text-[#16325B]">
           Speak with Synopsis Global
         </h2>
         <ConsultationForm initialService={service} onSuccess={() => setOpen(false)} />

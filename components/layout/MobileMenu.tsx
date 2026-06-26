@@ -20,7 +20,7 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
-        className="inline-flex size-11 items-center justify-center rounded-sm border border-slate-200 text-[#082B6A] transition hover:border-[#C9A227]"
+        className="inline-flex size-11 items-center justify-center rounded-xl border border-[#D9D6CF] text-[#16325B] transition hover:border-[#B08D57]"
         aria-label={open ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={open}
       >
@@ -28,7 +28,7 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
       </button>
 
       {open ? (
-        <div className="absolute left-0 top-full w-full border-t border-slate-200 bg-white shadow-xl">
+        <div className="absolute left-0 top-full w-full border-t border-[#D9D6CF] bg-[#F7F5F2] shadow-xl">
           <nav className="mx-auto flex max-w-7xl flex-col px-6 py-5" aria-label="Mobile navigation">
             {items.map((item) => {
               const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
@@ -40,7 +40,7 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
                   aria-current={active ? "page" : undefined}
                   onClick={() => setOpen(false)}
                   className={`border-b border-slate-100 py-3 text-sm font-semibold transition ${
-                    active ? "text-[#082B6A]" : "text-slate-700 hover:text-[#082B6A]"
+                    active ? "text-[#16325B]" : "text-[#1F2937]/78 hover:text-[#16325B]"
                   }`}
                 >
                   {item.label}
@@ -48,7 +48,7 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
               );
             })}
             <InquiryButton className="mt-5 w-full" onClick={() => setOpen(false)}>
-              Book Consultation
+              Book Free Counselling
             </InquiryButton>
           </nav>
         </div>

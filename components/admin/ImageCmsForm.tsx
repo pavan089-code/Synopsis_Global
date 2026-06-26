@@ -61,7 +61,7 @@ export function ImageCmsForm<T extends CmsItem>({
 
   return (
     <form onSubmit={handleSubmit} className="grid gap-4 border border-slate-200 bg-white p-5 shadow-sm">
-      <h2 className="text-xl font-semibold text-[#082B6A]">{item ? "Edit" : "Create"} {mode === "testimonials" ? "Testimonial" : "Country"}</h2>
+      <h2 className="text-xl font-semibold text-[#16325B]">{item ? "Edit" : "Create"} {mode === "testimonials" ? "Testimonial" : "Country"}</h2>
       {error ? <ErrorMessage message={error} /> : null}
       <input required placeholder={mode === "countries" ? "Country Name" : "Name"} value={form.name} onChange={(event) => updateField("name", event.target.value)} className="min-h-11 border border-slate-300 px-3" />
       {mode === "testimonials" ? (
@@ -80,7 +80,7 @@ export function ImageCmsForm<T extends CmsItem>({
         <input placeholder="Existing image URL" value={form.image} onChange={(event) => updateField("image", event.target.value)} className="min-h-11 border border-slate-300 px-3" />
         <input type="file" accept="image/*" onChange={(event) => setUpload(event.target.files?.[0] ?? null)} className="min-h-11 border border-slate-300 px-3 py-2" />
       </div>
-      <button type="submit" disabled={loading} className="min-h-11 bg-[#082B6A] px-5 text-sm font-bold uppercase tracking-[0.08em] text-white disabled:opacity-60">
+      <button type="submit" disabled={loading} className="min-h-11 bg-[#16325B] px-5 text-sm font-bold uppercase tracking-[0.08em] text-white disabled:opacity-60">
         {loading ? "Saving..." : "Save"}
       </button>
     </form>

@@ -8,11 +8,11 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    title: "How to Get a Work Visa in Canada",
-    slug: "work-visa-canada",
+    title: "How to Plan Your Study Abroad Journey",
+    slug: "study-abroad-planning-guide",
     excerpt:
-      "A practical overview of employer requirements, documentation, timelines, and preparation steps for skilled professionals exploring Canada.",
-    category: "Immigration",
+      "A practical guide to choosing destinations, comparing universities, preparing applications, and planning finances with confidence.",
+    category: "Study Abroad Guides",
     readTime: "6 min read",
   },
   {
@@ -24,19 +24,19 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
   },
   {
-    title: "Top Healthcare Jobs Abroad",
-    slug: "top-healthcare-jobs-abroad",
+    title: "Student Visa Documentation Checklist",
+    slug: "student-visa-documentation-checklist",
     excerpt:
-      "Explore international demand for nurses, care professionals, allied health workers, and medical support roles across major destinations.",
-    category: "Recruitment",
+      "Understand the common academic, financial, identity, and intent documents students should prepare before visa submission.",
+    category: "Visa Updates",
     readTime: "4 min read",
   },
   {
-    title: "UK Sponsorship Jobs Guide",
-    slug: "uk-sponsorship-jobs-guide",
+    title: "Scholarship Planning for International Students",
+    slug: "scholarship-planning-international-students",
     excerpt:
-      "Understand sponsored employment basics, compliance expectations, candidate readiness, and how to approach UK employers professionally.",
-    category: "Workforce",
+      "Learn how to identify scholarship opportunities, prepare stronger applications, and align funding options with admissions timelines.",
+    category: "Scholarship Articles",
     readTime: "7 min read",
   },
 ];

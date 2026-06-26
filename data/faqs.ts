@@ -10,23 +10,23 @@ export const faqs: Faq[] = [
       "Start with a profile consultation. We review your academic background, budget, preferred destination, and career goals before recommending universities, courses, admission documents, and visa preparation steps.",
   },
   {
-    question: "What recruitment services do you provide?",
+    question: "Do you help with university admissions?",
     answer:
-      "We support permanent staffing, contract staffing, bulk hiring, IT recruitment, non-IT recruitment, screening, interview coordination, and candidate readiness for international and domestic roles.",
+      "Yes. We help with university shortlisting, application documents, SOP and LOR guidance, deadline planning, offer review, and next steps for student visa preparation.",
   },
   {
     question: "Which countries do you support?",
     answer:
-      "Synopsis Global currently supports Canada, Australia, the United Kingdom, the United States, Germany, UAE, and New Zealand for education, employment, and immigration pathways.",
+      "Synopsis Global currently supports Canada, Australia, the United Kingdom, the United States, Germany, UAE, and New Zealand for education, student visa, visitor visa, work visa, and immigration pathways.",
   },
   {
     question: "Do you assist with work visas?",
     answer:
-      "Yes. We provide work visa guidance, eligibility review, documentation support, employer requirement coordination, and process tracking based on the destination and visa category.",
+      "Yes. We provide work visa guidance, eligibility review, documentation support, destination-specific requirement checks, and process tracking based on the visa category.",
   },
   {
-    question: "How can employers request staffing support?",
+    question: "How do I book free counselling?",
     answer:
-      "Employers can book a consultation or submit an inquiry with role requirements, hiring volume, location, timelines, and compliance needs. Our team will respond with a structured hiring support plan.",
+      "Use the Book Free Counselling button or submit the contact form with your destination, study level, visa category, and preferred counselling time. Our team will respond with the next steps.",
   },
 ];

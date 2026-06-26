@@ -12,14 +12,14 @@ export function CountriesSection() {
           <Reveal>
             <SectionHeading
               align="left"
-              eyebrow="Countries we serve"
-              title="International destinations with structured opportunity pathways"
-              description="We support candidates, students, and employers across established destinations with practical route planning and documentation guidance."
+              eyebrow="Popular destinations"
+              title="Study destinations with clear education and visa pathways"
+              description="Explore leading destinations for international students, including academic strengths, popular programs, and post-study route planning."
             />
           </Reveal>
           <Reveal>
             <Button href="/countries" variant="secondary">
-              View Countries
+              View Destinations
             </Button>
           </Reveal>
         </div>

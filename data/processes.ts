@@ -11,8 +11,8 @@ export const processFlows: ProcessFlow[] = [
     steps: ["Consultation", "University Selection", "Admission Support", "Visa Assistance", "Departure Guidance"],
   },
   {
-    title: "For Recruitment",
-    description: "A disciplined hiring workflow for employers and qualified candidates.",
-    steps: ["Requirement Analysis", "Candidate Sourcing", "Screening", "Interviews", "Hiring"],
+    title: "For Immigration",
+    description: "A careful pathway from eligibility review to document readiness and submission planning.",
+    steps: ["Eligibility Review", "Route Planning", "Document Checklist", "Application Support", "Interview Preparation"],
   },
 ];

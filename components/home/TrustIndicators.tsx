@@ -1,21 +1,23 @@
-import { AnimatedCounter } from "@/components/common/AnimatedCounter";
 import { Reveal } from "@/components/common/Reveal";
-import { statistics } from "@/data/statistics";
+
+const partners = ["Partner Universities", "Education Partners", "Visa Partners", "Professional Networks", "Global Counsellors"];
 
 export function TrustIndicators() {
   return (
-    <section className="border-b border-slate-200 bg-white py-10 sm:py-12" aria-label="Synopsis Global results">
-      <div className="mx-auto grid max-w-7xl gap-4 px-6 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
-        {statistics.map((stat, index) => (
-          <Reveal key={stat.label} delay={index * 0.05}>
-            <div className="h-full border-l-2 border-[#C9A227] bg-slate-50 px-6 py-5">
-              <p className="text-4xl font-semibold text-[#082B6A]">
-                <AnimatedCounter value={stat.value} suffix={stat.suffix} />
-              </p>
-              <p className="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-slate-500">{stat.label}</p>
+    <section className="border-y border-[#D9D6CF] bg-[#F7F5F2] py-10 sm:py-12" aria-label="Trusted education and visa partners">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <Reveal>
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <p className="max-w-xs text-xs font-bold uppercase tracking-[0.22em] text-[#6B7280]">Trusted by families, students, and international partners</p>
+            <div className="grid flex-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
+              {partners.map((partner) => (
+                <div key={partner} className="flex min-h-20 items-center justify-center border border-[#D9D6CF] bg-white/70 px-4 text-center text-sm font-semibold text-[#244A73]">
+                  {partner}
+                </div>
+              ))}
             </div>
-          </Reveal>
-        ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );

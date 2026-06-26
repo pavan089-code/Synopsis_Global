@@ -27,9 +27,9 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="bg-white">
-      <section className="bg-[#082B6A] py-20 text-white">
+      <section className="bg-[#16325B] py-20 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#C9A227]">About us</p>
+          <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#B08D57]">About us</p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">A trusted bridge between ambition and international opportunity</h1>
         </div>
       </section>
@@ -52,14 +52,14 @@ export default function AboutPage() {
       <section className="bg-slate-50 py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-2 lg:px-8">
           <Reveal>
-            <article className="h-full border-t-2 border-[#C9A227] bg-white p-8 shadow-sm">
-              <h2 className="text-2xl font-semibold text-[#082B6A]">Mission</h2>
+            <article className="h-full border-t-2 border-[#B08D57] bg-white p-8 shadow-sm">
+              <h2 className="text-2xl font-semibold text-[#16325B]">Mission</h2>
               <p className="mt-4 leading-7 text-slate-600">{mission}</p>
             </article>
           </Reveal>
           <Reveal delay={0.08}>
-            <article className="h-full border-t-2 border-[#C9A227] bg-white p-8 shadow-sm">
-              <h2 className="text-2xl font-semibold text-[#082B6A]">Vision</h2>
+            <article className="h-full border-t-2 border-[#B08D57] bg-white p-8 shadow-sm">
+              <h2 className="text-2xl font-semibold text-[#16325B]">Vision</h2>
               <p className="mt-4 leading-7 text-slate-600">{vision}</p>
             </article>
           </Reveal>
@@ -72,7 +72,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Core values"
               title="The standards behind every engagement"
-              description="Our values shape how we communicate, prepare documentation, advise families, and support employers through high-stakes decisions."
+              description="Our values shape how we communicate, prepare documentation, advise families, and support applicants through high-stakes decisions."
             />
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -81,8 +81,8 @@ export default function AboutPage() {
               return (
                 <Reveal key={value.title} delay={index * 0.05}>
                   <article className="h-full border border-slate-200 p-6">
-                    <Icon aria-hidden="true" className="size-8 text-[#C9A227]" />
-                    <h3 className="mt-5 text-lg font-semibold text-[#082B6A]">{value.title}</h3>
+                    <Icon aria-hidden="true" className="size-8 text-[#B08D57]" />
+                    <h3 className="mt-5 text-lg font-semibold text-[#16325B]">{value.title}</h3>
                     <p className="mt-3 text-sm leading-6 text-slate-600">{value.body}</p>
                   </article>
                 </Reveal>
@@ -99,15 +99,15 @@ export default function AboutPage() {
               align="left"
               eyebrow="Global reach"
               title="Destination-aware support for international pathways"
-              description="Synopsis Global supports work, study, hiring, and immigration planning across priority markets with practical guidance for each destination."
+              description="Synopsis Global supports study, visa, and immigration planning across priority markets with practical guidance for each destination."
             />
           </Reveal>
           <Reveal delay={0.08}>
             <div className="grid gap-3 sm:grid-cols-2">
               {countries.map((country) => (
                 <div key={country.code} className="flex items-center justify-between border border-slate-200 bg-white px-4 py-3">
-                  <span className="font-semibold text-[#082B6A]">{country.name}</span>
-                  <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#C9A227]">{country.code}</span>
+                  <span className="font-semibold text-[#16325B]">{country.name}</span>
+                  <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#B08D57]">{country.code}</span>
                 </div>
               ))}
             </div>
@@ -129,9 +129,9 @@ export default function AboutPage() {
               const Icon = pillar.icon;
               return (
                 <Reveal key={pillar.title} delay={index * 0.05}>
-                  <article className="h-full border-t-2 border-[#C9A227] bg-white p-6 shadow-sm">
-                    <Icon aria-hidden="true" className="size-8 text-[#082B6A]" />
-                    <h3 className="mt-5 text-lg font-semibold text-[#082B6A]">{pillar.title}</h3>
+                  <article className="h-full border-t-2 border-[#B08D57] bg-white p-6 shadow-sm">
+                    <Icon aria-hidden="true" className="size-8 text-[#16325B]" />
+                    <h3 className="mt-5 text-lg font-semibold text-[#16325B]">{pillar.title}</h3>
                     <p className="mt-3 text-sm leading-6 text-slate-600">{pillar.description}</p>
                   </article>
                 </Reveal>

@@ -9,9 +9,9 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <Reveal>
           <SectionHeading
-            eyebrow="Testimonials"
-            title="Trusted by candidates, students, and corporate teams"
-            description="Realistic outcomes begin with careful guidance, clear communication, and professional follow-through."
+            eyebrow="Success stories"
+            title="Real journeys shaped by careful guidance"
+            description="Students and applicants trust Synopsis Global for clear counselling, practical preparation, and steady support from first discussion to final outcome."
           />
         </Reveal>
         <div className="mt-12 grid gap-6 lg:grid-cols-3">

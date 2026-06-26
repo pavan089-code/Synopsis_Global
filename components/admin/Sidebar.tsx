@@ -38,7 +38,7 @@ export function Sidebar() {
   }
 
   return (
-    <aside className={`border-r border-white/10 bg-[#082B6A] text-white transition-all ${collapsed ? "lg:w-20" : "lg:w-72"} w-full lg:min-h-screen`}>
+    <aside className={`border-r border-white/10 bg-[#16325B] text-white transition-all ${collapsed ? "lg:w-20" : "lg:w-72"} w-full lg:min-h-screen`}>
       <div className="flex h-16 items-center justify-between border-b border-white/10 px-4">
         <Link href="/admin/dashboard" className={`font-serif text-xl font-semibold text-white ${collapsed ? "lg:hidden" : ""}`}>
           Synopsis Admin
@@ -64,7 +64,7 @@ export function Sidebar() {
               aria-current={active ? "page" : undefined}
               title={collapsed ? item.label : undefined}
               className={`flex min-h-11 items-center gap-3 rounded-sm px-3 text-sm font-semibold transition ${
-                active ? "bg-[#C9A227] text-[#082B6A]" : "text-white/80 hover:bg-white/10 hover:text-white"
+                active ? "bg-[#B08D57] text-[#16325B]" : "text-white/80 hover:bg-white/10 hover:text-white"
               }`}
             >
               <Icon className="size-5 shrink-0" aria-hidden="true" />

@@ -5,8 +5,8 @@ export type Statistic = {
 };
 
 export const statistics: Statistic[] = [
-  { value: 500, suffix: "+", label: "Successful Placements" },
-  { value: 300, suffix: "+", label: "Student Admissions" },
-  { value: 200, suffix: "+", label: "Visa Approvals" },
-  { value: 50, suffix: "+", label: "Corporate Clients" },
+  { value: 1000, suffix: "+", label: "Students Guided" },
+  { value: 95, suffix: "%", label: "Visa Success Rate" },
+  { value: 20, suffix: "+", label: "Partner Institutions" },
+  { value: 10, suffix: "+", label: "Destination Countries" },
 ];

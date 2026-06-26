@@ -2,33 +2,35 @@ import type { Metadata } from "next";
 import { Button } from "@/components/common/Button";
 import { Reveal } from "@/components/common/Reveal";
 import { SectionHeading } from "@/components/common/SectionHeading";
+import { BlogPreview } from "@/components/home/BlogPreview";
 import { CountriesSection } from "@/components/home/CountriesSection";
 import { CTASection } from "@/components/home/CTASection";
-import { FAQSection } from "@/components/home/FAQSection";
 import { Hero } from "@/components/home/Hero";
-import { ProcessSection } from "@/components/home/ProcessSection";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
+import { StatisticsSection } from "@/components/home/StatisticsSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { TrustIndicators } from "@/components/home/TrustIndicators";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Connecting Talent to Global Opportunities",
+  title: "Building Your Future Beyond Borders",
   description:
-    "Synopsis Global delivers workforce solutions, recruitment services, study abroad consulting, and immigration services for global opportunities.",
+    "Synopsis Global guides students and professionals through study abroad, university admissions, visas, and immigration pathways.",
   keywords: siteConfig.keywords,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Synopsis Global | Connecting Talent to Global Opportunities",
-    description: "Premium consultancy for workforce solutions, recruitment, education services, and immigration pathways.",
+    title: "Synopsis Global | Building Your Future Beyond Borders",
+    description: "Premium international education and immigration consultancy for study abroad, visas, and global pathways.",
     url: "/",
     type: "website",
+    images: [{ url: "/images/hero-global-journey.png", width: 1792, height: 1024, alt: "Synopsis Global international education journey" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Synopsis Global",
-    description: siteConfig.tagline,
+    description: "Study abroad, visa, and immigration counselling for global futures.",
+    images: ["/images/hero-global-journey.png"],
   },
 };
 
@@ -47,20 +49,20 @@ export default function Home() {
               {[
                 {
                   title: "Who We Are",
-                  body: "Synopsis Global is a professional services company offering end-to-end solutions in workforce management, recruitment & staffing, education services, and immigration services.",
+                  body: "Synopsis Global is a professional education and immigration consultancy supporting students, families, and professionals with trusted international guidance.",
                 },
                 {
                   title: "Mission",
-                  body: "To connect qualified talent with trusted global pathways through ethical guidance, careful documentation, and strong institutional partnerships.",
+                  body: "To guide every client through education, visa, and immigration decisions with ethical counselling, careful documentation, and practical destination insight.",
                 },
                 {
                   title: "Vision",
-                  body: "To become a respected international advisory brand known for dependable outcomes and long-term client success.",
+                  body: "To become a respected international advisory brand known for dependable guidance, transparent processes, and long-term client success.",
                 },
               ].map((item) => (
-                <article key={item.title} className="border-l-2 border-[#C9A227] pl-6">
-                  <h3 className="text-lg font-semibold text-[#082B6A]">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-600">{item.body}</p>
+                <article key={item.title} className="border-l-2 border-[#B08D57] pl-6">
+                  <h3 className="text-lg font-semibold text-[#16325B]">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[#6B7280]">{item.body}</p>
                 </article>
               ))}
               <Button href="/about" variant="secondary" className="w-fit">
@@ -73,10 +75,33 @@ export default function Home() {
       <ServicesPreview />
       <WhyChooseUs />
       <CountriesSection />
-      <ProcessSection />
       <TestimonialsSection />
-      <FAQSection />
+      <StatisticsSection />
+      <BlogPreview />
       <CTASection />
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: siteConfig.name,
+            url: siteConfig.url,
+            logo: `${siteConfig.url}/logo.jpeg`,
+            description: siteConfig.tagline,
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Hyderabad",
+              addressCountry: "IN",
+            },
+            areaServed: ["Canada", "Australia", "United Kingdom", "United States", "Germany", "New Zealand", "UAE"],
+            serviceType: ["Study Abroad Counselling", "University Admissions", "Student Visa Guidance", "Immigration Guidance"],
+            telephone: siteConfig.phone,
+            email: siteConfig.email,
+          }),
+        }}
+      />
     </>
   );
 }

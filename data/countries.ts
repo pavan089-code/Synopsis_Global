@@ -2,50 +2,82 @@ export type Country = {
   name: string;
   code: string;
   description: string;
-  opportunities: string;
+  image: string;
+  quickFacts: string[];
+  topUniversities: string;
+  popularPrograms: string;
+  visaPathway: string;
 };
 
 export const countries: Country[] = [
   {
     name: "Canada",
     code: "CA",
-    description: "A leading destination for skilled workers, healthcare professionals, students, and permanent residency pathways.",
-    opportunities: "Healthcare, logistics, technology, trades, higher education, and employer-sponsored roles.",
+    image: "/images/campus-students.png",
+    description: "A leading destination for quality education, post-study work options, and long-term settlement planning.",
+    quickFacts: ["Post-graduation work options", "Strong public institutions"],
+    topUniversities: "Toronto, UBC, McGill, Waterloo",
+    popularPrograms: "Business, data science, engineering, healthcare",
+    visaPathway: "Study permit to PGWP and PR routes",
   },
   {
     name: "Australia",
     code: "AU",
-    description: "A strong market for international education, skilled migration, and high-demand professional placements.",
-    opportunities: "Nursing, engineering, hospitality, construction, regional employment, and university admissions.",
+    image: "/images/campus-students.png",
+    description: "A student-friendly destination with globally ranked universities and practical post-study opportunities.",
+    quickFacts: ["February and July intakes", "Regional study advantages"],
+    topUniversities: "Melbourne, Sydney, ANU, Monash",
+    popularPrograms: "Nursing, IT, business, hospitality",
+    visaPathway: "Student visa with graduate visa options",
   },
   {
     name: "United Kingdom",
     code: "UK",
-    description: "A mature global market for sponsored employment, postgraduate education, and specialist talent mobility.",
-    opportunities: "Healthcare, social care, education, IT, finance, and skilled worker sponsorship routes.",
+    image: "/images/graduate-success.png",
+    description: "A prestigious education market known for concise degrees, research quality, and graduate outcomes.",
+    quickFacts: ["One-year master's options", "Graduate route available"],
+    topUniversities: "Oxford, Cambridge, UCL, Manchester",
+    popularPrograms: "Finance, law, public health, analytics",
+    visaPathway: "Student visa to graduate route",
   },
   {
     name: "United States",
     code: "US",
-    description: "A competitive destination for advanced education, professional development, and specialised career pathways.",
-    opportunities: "Graduate studies, technology, healthcare, research, business programs, and professional internships.",
+    image: "/images/campus-students.png",
+    description: "A competitive destination for research-led education, flexible programs, and global career exposure.",
+    quickFacts: ["Large university choice", "STEM OPT pathways"],
+    topUniversities: "MIT, Stanford, Berkeley, Columbia",
+    popularPrograms: "Computer science, business, engineering",
+    visaPathway: "F-1 visa with OPT and STEM OPT",
   },
   {
     name: "Germany",
     code: "DE",
-    description: "A growing European hub for skilled labour, technical education, and structured employment migration.",
-    opportunities: "Engineering, manufacturing, healthcare, vocational pathways, logistics, and language-linked roles.",
+    image: "/images/campus-students.png",
+    description: "A strong European option for technical education, research, and accessible public university pathways.",
+    quickFacts: ["Low tuition options", "Growing English programs"],
+    topUniversities: "TUM, Heidelberg, RWTH Aachen",
+    popularPrograms: "Engineering, AI, management, sciences",
+    visaPathway: "Student visa with job-seeker options",
   },
   {
     name: "UAE",
     code: "AE",
-    description: "A dynamic regional market for corporate staffing, hospitality, healthcare, and professional services.",
-    opportunities: "Corporate services, aviation, facilities, hospitality, healthcare, retail, and management roles.",
+    image: "/images/visa-counselling.png",
+    description: "A close-to-home international hub for branch campuses, business programs, and professional mobility.",
+    quickFacts: ["Regional education hub", "Fast-growing campuses"],
+    topUniversities: "NYU Abu Dhabi, Heriot-Watt, Middlesex",
+    popularPrograms: "Business, aviation, hospitality, technology",
+    visaPathway: "Student visa and residency options",
   },
   {
     name: "New Zealand",
     code: "NZ",
-    description: "A trusted destination for students and skilled professionals seeking quality of life and stable growth.",
-    opportunities: "Healthcare, agriculture, construction, education, hospitality, and regional skill shortage roles.",
+    image: "/images/graduate-success.png",
+    description: "A trusted destination for high-quality education, smaller class environments, and settlement planning.",
+    quickFacts: ["Welcoming campuses", "Post-study work rights"],
+    topUniversities: "Auckland, Otago, Victoria Wellington",
+    popularPrograms: "Agriculture, healthcare, IT, business",
+    visaPathway: "Student visa to post-study work",
   },
 ];

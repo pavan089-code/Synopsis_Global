@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Globe2, Handshake, ShieldCheck, UserCheck } from "lucide-react";
+import { BadgeCheck, Globe2, Handshake, ShieldCheck, UserCheck } from "lucide-react";
 
 export type ChoicePillar = {
   title: string;
@@ -9,23 +9,28 @@ export type ChoicePillar = {
 
 export const choicePillars: ChoicePillar[] = [
   {
-    title: "Global Network",
-    description: "Access to international education, employment, and workforce markets through trusted channels.",
-    icon: Globe2,
-  },
-  {
-    title: "Industry Expertise",
-    description: "Practical experience across recruitment, education, immigration, HR, and compliance workflows.",
-    icon: ShieldCheck,
-  },
-  {
-    title: "End-to-End Support",
-    description: "Clear guidance from initial consultation through documentation, submission, and onboarding.",
+    title: "Personalized Counselling",
+    description: "Every student and applicant receives route planning shaped around profile, finances, destination, and long-term goals.",
     icon: UserCheck,
   },
   {
-    title: "Trusted Partnerships",
-    description: "Professional relationships with employers, institutions, and advisory stakeholders.",
+    title: "Certified Experts",
+    description: "Experienced counsellors review eligibility, admissions requirements, visa criteria, and documentation with care.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Transparent Process",
+    description: "Clear timelines, document checklists, application milestones, and honest guidance at each decision point.",
+    icon: BadgeCheck,
+  },
+  {
+    title: "Global Partnerships",
+    description: "Access to education partners, visa guidance networks, and destination knowledge across leading study countries.",
     icon: Handshake,
+  },
+  {
+    title: "High Visa Success",
+    description: "Strong preparation standards help reduce avoidable gaps before applications reach admissions or visa review.",
+    icon: Globe2,
   },
 ];

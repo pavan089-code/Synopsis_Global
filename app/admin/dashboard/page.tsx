@@ -48,11 +48,11 @@ export default function AdminDashboardPage() {
       {loading ? <LoadingSpinner label="Loading dashboard metrics" /> : <DashboardCards totals={totals} />}
       <section className="mt-6 grid gap-5 lg:grid-cols-2">
         <div className="min-h-72 border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-semibold text-[#082B6A]">Lead Trend</h2>
+          <h2 className="text-lg font-semibold text-[#16325B]">Lead Trend</h2>
           <div className="mt-6 flex h-48 items-center justify-center border border-dashed border-slate-300 text-sm font-semibold text-slate-500">Analytics chart placeholder</div>
         </div>
         <div className="min-h-72 border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-semibold text-[#082B6A]">Conversion Pipeline</h2>
+          <h2 className="text-lg font-semibold text-[#16325B]">Conversion Pipeline</h2>
           <div className="mt-6 flex h-48 items-center justify-center border border-dashed border-slate-300 text-sm font-semibold text-slate-500">Pipeline chart placeholder</div>
         </div>
       </section>

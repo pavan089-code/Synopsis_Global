@@ -48,7 +48,7 @@ export function ResumeUploader() {
   return (
     <div>
       <label
-        className="flex min-h-40 cursor-pointer flex-col items-center justify-center rounded-sm border border-dashed border-slate-300 bg-slate-50 px-6 py-8 text-center transition hover:border-[#C9A227] hover:bg-white"
+        className="flex min-h-40 cursor-pointer flex-col items-center justify-center rounded-sm border border-dashed border-slate-300 bg-slate-50 px-6 py-8 text-center transition hover:border-[#B08D57] hover:bg-white"
         onDragOver={(event) => event.preventDefault()}
         onDrop={(event) => {
           event.preventDefault();
@@ -58,8 +58,8 @@ export function ResumeUploader() {
           }
         }}
       >
-        <UploadCloud aria-hidden="true" className="size-9 text-[#C9A227]" />
-        <span className="mt-4 text-sm font-semibold text-[#082B6A]">{fileName || "Drag and drop your resume, or browse"}</span>
+        <UploadCloud aria-hidden="true" className="size-9 text-[#B08D57]" />
+        <span className="mt-4 text-sm font-semibold text-[#16325B]">{fileName || "Drag and drop your resume, or browse"}</span>
         <span className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">PDF, DOC, DOCX up to 5 MB</span>
         <input
           required

@@ -43,42 +43,42 @@ export function ConsultationForm({ initialService, onSuccess }: { initialService
         </div>
       ) : null}
       <div className="grid gap-4 sm:grid-cols-2">
-        <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+        <label className="grid gap-2 text-sm font-semibold text-[#16325B]">
           Name
-          <input required type="text" value={form.name} onChange={(event) => updateField("name", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]" />
+          <input required type="text" value={form.name} onChange={(event) => updateField("name", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#B08D57]" />
         </label>
-        <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+        <label className="grid gap-2 text-sm font-semibold text-[#16325B]">
           Phone
-          <input required type="tel" value={form.phone} onChange={(event) => updateField("phone", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]" />
+          <input required type="tel" value={form.phone} onChange={(event) => updateField("phone", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#B08D57]" />
         </label>
       </div>
-      <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+      <label className="grid gap-2 text-sm font-semibold text-[#16325B]">
         Email
-        <input required type="email" value={form.email} onChange={(event) => updateField("email", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]" />
+        <input required type="email" value={form.email} onChange={(event) => updateField("email", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#B08D57]" />
       </label>
-      <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+      <label className="grid gap-2 text-sm font-semibold text-[#16325B]">
         Service Interested In
-        <select value={form.service} onChange={(event) => updateField("service", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]">
+        <select value={form.service} onChange={(event) => updateField("service", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#B08D57]">
           {services.map((item) => (
             <option key={item.slug}>{item.title}</option>
           ))}
         </select>
       </label>
       <div className="grid gap-4 sm:grid-cols-2">
-        <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+        <label className="grid gap-2 text-sm font-semibold text-[#16325B]">
           Preferred Date
-          <input required type="date" value={form.preferredDate} onChange={(event) => updateField("preferredDate", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]" />
+          <input required type="date" value={form.preferredDate} onChange={(event) => updateField("preferredDate", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#B08D57]" />
         </label>
-        <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+        <label className="grid gap-2 text-sm font-semibold text-[#16325B]">
           Preferred Time
-          <input required type="time" value={form.preferredTime} onChange={(event) => updateField("preferredTime", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]" />
+          <input required type="time" value={form.preferredTime} onChange={(event) => updateField("preferredTime", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#B08D57]" />
         </label>
       </div>
-      <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+      <label className="grid gap-2 text-sm font-semibold text-[#16325B]">
         Notes
-        <textarea rows={4} value={form.notes} onChange={(event) => updateField("notes", event.target.value)} className="rounded-sm border border-slate-300 px-4 py-3 text-slate-800 outline-none transition focus:border-[#C9A227]" />
+        <textarea rows={4} value={form.notes} onChange={(event) => updateField("notes", event.target.value)} className="rounded-sm border border-slate-300 px-4 py-3 text-slate-800 outline-none transition focus:border-[#B08D57]" />
       </label>
-      <button type="submit" disabled={loading} className="min-h-12 rounded-sm bg-[#082B6A] px-5 text-sm font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#061f4f] disabled:opacity-60">
+      <button type="submit" disabled={loading} className="min-h-12 rounded-sm bg-[#16325B] px-5 text-sm font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#244A73] disabled:opacity-60">
         {loading ? "Submitting..." : "Submit Consultation"}
       </button>
     </form>

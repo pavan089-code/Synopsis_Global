@@ -42,7 +42,7 @@ export function LeadForm({ onSaved }: { onSaved?: () => void }) {
         <input required placeholder="Service" value={form.service} onChange={(event) => updateField("service", event.target.value)} className="min-h-11 border border-slate-300 px-3" />
       </div>
       <textarea required rows={4} placeholder="Message" value={form.message} onChange={(event) => updateField("message", event.target.value)} className="border border-slate-300 px-3 py-2" />
-      <button type="submit" disabled={loading} className="min-h-11 bg-[#082B6A] px-5 text-sm font-bold uppercase tracking-[0.08em] text-white disabled:opacity-60">
+      <button type="submit" disabled={loading} className="min-h-11 bg-[#16325B] px-5 text-sm font-bold uppercase tracking-[0.08em] text-white disabled:opacity-60">
         {loading ? "Saving..." : "Create Lead"}
       </button>
     </form>

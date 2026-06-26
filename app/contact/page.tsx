@@ -9,7 +9,7 @@ import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Yeshwanth at Synopsis Global for recruitment services, study abroad guidance, work visa support, immigration services, and workforce solutions.",
+  description: "Contact Yeshwanth at Synopsis Global for study abroad guidance, student visa support, immigration services, and free counselling.",
   keywords: siteConfig.keywords,
   alternates: { canonical: "/contact" },
   openGraph: {
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Contact Synopsis Global",
-    description: "Recruitment, education, immigration, and workforce consultation.",
+    description: "Education, visa, and immigration counselling.",
   },
 };
 
 export default function ContactPage() {
   return (
     <div className="bg-white">
-      <section className="bg-[#082B6A] py-20 text-white">
+      <section className="bg-[#16325B] py-20 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#C9A227]">Contact</p>
+          <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#B08D57]">Contact</p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">Start with a focused consultation</h1>
         </div>
       </section>
@@ -48,13 +48,13 @@ export default function ContactPage() {
           <Reveal delay={0.08}>
             <aside className="space-y-6">
               <div className="border border-slate-200 bg-slate-50 p-6">
-                <h2 className="text-2xl font-semibold text-[#082B6A]">Contact Information</h2>
+                <h2 className="text-2xl font-semibold text-[#16325B]">Contact Information</h2>
                 <ul className="mt-6 space-y-5 text-sm text-slate-700">
-                  <li className="flex gap-3"><UserRound className="size-5 text-[#C9A227]" aria-hidden="true" /> Contact Person: {siteConfig.contactPerson}</li>
-                  <li className="flex gap-3"><Phone className="size-5 text-[#C9A227]" aria-hidden="true" /> {siteConfig.phone}</li>
-                  <li className="flex gap-3"><Mail className="size-5 text-[#C9A227]" aria-hidden="true" /> <a href={`mailto:${siteConfig.email}`} className="hover:text-[#082B6A]">{siteConfig.email}</a></li>
-                  <li className="flex gap-3"><MapPin className="size-5 text-[#C9A227]" aria-hidden="true" /> {siteConfig.address}</li>
-                  <li className="flex gap-3"><Clock className="size-5 text-[#C9A227]" aria-hidden="true" /> {siteConfig.businessHours}</li>
+                  <li className="flex gap-3"><UserRound className="size-5 text-[#B08D57]" aria-hidden="true" /> Contact Person: {siteConfig.contactPerson}</li>
+                  <li className="flex gap-3"><Phone className="size-5 text-[#B08D57]" aria-hidden="true" /> {siteConfig.phone}</li>
+                  <li className="flex gap-3"><Mail className="size-5 text-[#B08D57]" aria-hidden="true" /> <a href={`mailto:${siteConfig.email}`} className="hover:text-[#16325B]">{siteConfig.email}</a></li>
+                  <li className="flex gap-3"><MapPin className="size-5 text-[#B08D57]" aria-hidden="true" /> {siteConfig.address}</li>
+                  <li className="flex gap-3"><Clock className="size-5 text-[#B08D57]" aria-hidden="true" /> {siteConfig.businessHours}</li>
                 </ul>
                 <Button
                   href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(siteConfig.whatsappMessage)}`}
@@ -68,7 +68,7 @@ export default function ContactPage() {
                 </Button>
               </div>
               <div className="border border-slate-200 bg-white p-6 shadow-sm">
-                <h2 className="text-2xl font-semibold text-[#082B6A]">Inquiry Form</h2>
+                <h2 className="text-2xl font-semibold text-[#16325B]">Inquiry Form</h2>
                 <p className="mt-3 text-sm leading-6 text-slate-600">
                   Prefer a focused service inquiry? Open the reusable inquiry form and select the service you are interested in.
                 </p>
@@ -76,8 +76,8 @@ export default function ContactPage() {
               </div>
               <div className="flex min-h-72 items-center justify-center border border-dashed border-slate-300 bg-slate-50 p-6 text-center">
                 <div>
-                  <MapPin aria-hidden="true" className="mx-auto size-8 text-[#C9A227]" />
-                  <p className="mt-4 font-semibold text-[#082B6A]">Google Maps Placeholder</p>
+                  <MapPin aria-hidden="true" className="mx-auto size-8 text-[#B08D57]" />
+                  <p className="mt-4 font-semibold text-[#16325B]">Google Maps Placeholder</p>
                   <p className="mt-2 text-sm text-slate-600">Embed office location once the final address is confirmed.</p>
                 </div>
               </div>

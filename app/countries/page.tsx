@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 export default function CountriesPage() {
   return (
     <div className="bg-white">
-      <section className="bg-[#082B6A] py-20 text-white">
+      <section className="bg-[#16325B] py-20 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#C9A227]">Countries</p>
+          <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#B08D57]">Countries</p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">Global destinations for work, study, and long-term growth</h1>
         </div>
       </section>

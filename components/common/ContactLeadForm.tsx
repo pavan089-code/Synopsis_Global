@@ -50,33 +50,33 @@ export function ContactLeadForm() {
         { label: "Email", type: "email", key: "email" },
         { label: "Phone", type: "tel", key: "phone" },
       ].map((field) => (
-        <label key={field.label} className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+        <label key={field.label} className="grid gap-2 text-sm font-semibold text-[#16325B]">
           {field.label}
           <input
             required
             type={field.type}
             value={form[field.key as keyof CreateContactLeadInput]}
             onChange={(event) => updateField(field.key as keyof CreateContactLeadInput, event.target.value)}
-            className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]"
+            className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#B08D57]"
           />
         </label>
       ))}
-      <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+      <label className="grid gap-2 text-sm font-semibold text-[#16325B]">
         Service Interested In
-        <select value={form.service} onChange={(event) => updateField("service", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#C9A227]">
+        <select value={form.service} onChange={(event) => updateField("service", event.target.value)} className="min-h-12 rounded-sm border border-slate-300 px-4 text-slate-800 outline-none transition focus:border-[#B08D57]">
           {services.map((service) => (
             <option key={service.slug}>{service.title}</option>
           ))}
         </select>
       </label>
-      <label className="grid gap-2 text-sm font-semibold text-[#082B6A]">
+      <label className="grid gap-2 text-sm font-semibold text-[#16325B]">
         Message
-        <textarea required rows={5} value={form.message} onChange={(event) => updateField("message", event.target.value)} className="rounded-sm border border-slate-300 px-4 py-3 text-slate-800 outline-none transition focus:border-[#C9A227]" />
+        <textarea required rows={5} value={form.message} onChange={(event) => updateField("message", event.target.value)} className="rounded-sm border border-slate-300 px-4 py-3 text-slate-800 outline-none transition focus:border-[#B08D57]" />
       </label>
       <button
         type="submit"
         disabled={loading}
-        className="min-h-12 rounded-sm bg-[#082B6A] px-5 text-sm font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#061f4f] disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#082B6A]"
+        className="min-h-12 rounded-sm bg-[#16325B] px-5 text-sm font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#244A73] disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16325B]"
       >
         {loading ? "Submitting..." : "Submit Enquiry"}
       </button>
