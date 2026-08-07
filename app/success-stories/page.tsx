@@ -16,7 +16,7 @@ export default function SuccessStoriesPage() {
       <section className="bg-[#16325B] py-20 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#B08D57]">Success stories</p>
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">Real outcomes across education, visas, and immigration pathways</h1>
+          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">Meaningful progress across global pathways</h1>
         </div>
       </section>
       <section className="py-20 sm:py-24">
@@ -51,10 +51,10 @@ export default function SuccessStoriesPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <SectionHeading eyebrow="Milestones" title="Representative success pathways" />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {["Students admitted to Australian universities", "Student visa approvals for Canada", "Graduate success stories in the United Kingdom"].map((item) => (
+            {["Study abroad admissions in Australia", "Student visa outcomes for Canada", "Overseas career pathways in the United Kingdom"].map((item) => (
               <article key={item} className="border-l-2 border-[#B08D57] bg-slate-50 p-6">
                 <h3 className="text-lg font-semibold text-[#16325B]">{item}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">Structured consultation, document readiness, interview preparation, and ongoing coordination supported this pathway.</p>
+                <p className="mt-3 text-sm leading-6 text-slate-600">A structured consultation, well-prepared documentation, and focused coordination supported progress through this pathway.</p>
               </article>
             ))}
           </div>

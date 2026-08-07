@@ -10,7 +10,7 @@ export function FAQSection() {
           <SectionHeading
             eyebrow="FAQ"
             title="Common questions before getting started"
-            description="Quick answers for students, professionals, and families considering international education and immigration pathways."
+            description="Quick answers for students, professionals, families, and organisations considering international education, overseas careers, immigration, or workforce support."
           />
         </Reveal>
         <div className="mt-12 divide-y divide-slate-200 border-y border-slate-200">

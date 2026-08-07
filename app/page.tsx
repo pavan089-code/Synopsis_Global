@@ -14,22 +14,22 @@ import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Building Your Future Beyond Borders",
+  title: "Technology and Business Consulting",
   description:
-    "Synopsis Global guides students and professionals through study abroad, university admissions, visas, and immigration pathways.",
+    "Synopsis Global provides technology consulting, digital transformation, talent solutions, managed services, and business advisory for ambitious enterprises.",
   keywords: siteConfig.keywords,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Synopsis Global | Building Your Future Beyond Borders",
-    description: "Premium international education and immigration consultancy for study abroad, visas, and global pathways.",
+    title: "Synopsis Global | Technology and Business Consulting",
+    description: "Technology consulting, digital transformation, talent solutions, managed services, and business advisory for ambitious enterprises.",
     url: "/",
     type: "website",
-    images: [{ url: "/images/hero-global-journey.png", width: 1792, height: 1024, alt: "Synopsis Global international education journey" }],
+    images: [{ url: "/images/hero-global-journey.png", width: 1792, height: 1024, alt: "Synopsis Global technology and business consulting" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Synopsis Global",
-    description: "Study abroad, visa, and immigration counselling for global futures.",
+    description: "Technology consulting and business solutions for enterprise growth.",
     images: ["/images/hero-global-journey.png"],
   },
 };
@@ -42,22 +42,22 @@ export default function Home() {
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[.9fr_1.1fr] lg:px-8">
           <Reveal>
-            <SectionHeading align="left" eyebrow="About Synopsis Global" title="A premium consultancy for international pathways" />
+            <SectionHeading align="left" eyebrow="About Synopsis Global" title="A strategic partner for technology-led growth" />
           </Reveal>
           <Reveal>
             <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-1">
               {[
                 {
                   title: "Who We Are",
-                  body: "Synopsis Global is a professional education and immigration consultancy supporting students, families, and professionals with trusted international guidance.",
+                  body: "Synopsis Global is a modern IT solutions and business consulting company helping enterprises translate complex priorities into practical, measurable progress.",
                 },
                 {
                   title: "Mission",
-                  body: "To guide every client through education, visa, and immigration decisions with ethical counselling, careful documentation, and practical destination insight.",
+                  body: "To help clients unlock stronger performance through insightful consulting, dependable technology services, and exceptional delivery.",
                 },
                 {
                   title: "Vision",
-                  body: "To become a respected international advisory brand known for dependable guidance, transparent processes, and long-term client success.",
+                  body: "To be a globally trusted partner for innovation, scalable transformation, and long-term business success.",
                 },
               ].map((item) => (
                 <article key={item.title} className="border-l-2 border-[#B08D57] pl-6">
@@ -66,7 +66,7 @@ export default function Home() {
                 </article>
               ))}
               <Button href="/about" variant="secondary" className="w-fit">
-                Learn More
+                Discover Our Approach
               </Button>
             </div>
           </Reveal>
@@ -85,7 +85,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "EducationalOrganization",
+            "@type": "ProfessionalService",
             name: siteConfig.name,
             url: siteConfig.url,
             logo: `${siteConfig.url}/logo.jpeg`,
@@ -95,8 +95,8 @@ export default function Home() {
               addressLocality: "Hyderabad",
               addressCountry: "IN",
             },
-            areaServed: ["Canada", "Australia", "United Kingdom", "United States", "Germany", "New Zealand", "UAE"],
-            serviceType: ["Study Abroad Counselling", "University Admissions", "Student Visa Guidance", "Immigration Guidance"],
+            areaServed: "Global",
+            serviceType: ["Technology Consulting", "Digital Transformation", "Talent Solutions", "Managed Services", "Business Advisory"],
             telephone: siteConfig.phone,
             email: siteConfig.email,
           }),

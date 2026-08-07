@@ -12,7 +12,7 @@ export function CountryCard({ country }: CountryCardProps) {
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
           src={country.image}
-          alt={`${country.name} study destination`}
+          alt={country.isIndustry ? `${country.name} industry` : `${country.name} study destination`}
           fill
           sizes="(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw"
           className="object-cover transition duration-500 group-hover:scale-105"
@@ -26,13 +26,13 @@ export function CountryCard({ country }: CountryCardProps) {
         <h3 className="text-xl font-semibold text-[#16325B]">{country.name}</h3>
         <p className="mt-3 text-sm leading-6 text-[#6B7280]">{country.description}</p>
         <div className="mt-5 grid gap-3 text-sm text-[#1F2937]">
-          <p><span className="font-semibold text-[#16325B]">Quick facts:</span> {country.quickFacts.join(", ")}</p>
-          <p><span className="font-semibold text-[#16325B]">Top universities:</span> {country.topUniversities}</p>
-          <p><span className="font-semibold text-[#16325B]">Popular programs:</span> {country.popularPrograms}</p>
-          <p><span className="font-semibold text-[#16325B]">Visa pathway:</span> {country.visaPathway}</p>
+          <p><span className="font-semibold text-[#16325B]">{country.isIndustry ? "Key priorities:" : "Quick facts:"}</span> {country.quickFacts.join(", ")}</p>
+          <p><span className="font-semibold text-[#16325B]">{country.isIndustry ? "Core capabilities:" : "Top universities:"}</span> {country.topUniversities}</p>
+          <p><span className="font-semibold text-[#16325B]">{country.isIndustry ? "Solution focus:" : "Popular programs:"}</span> {country.popularPrograms}</p>
+          <p><span className="font-semibold text-[#16325B]">{country.isIndustry ? "Business value:" : "Visa pathway:"}</span> {country.visaPathway}</p>
         </div>
         <Link href="/countries" className="mt-6 inline-flex text-sm font-semibold text-[#16325B] transition hover:text-[#B08D57]">
-          Explore Destination
+          {country.isIndustry ? "Explore Industry" : "Explore Destination"}
         </Link>
       </div>
     </article>

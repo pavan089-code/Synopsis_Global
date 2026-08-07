@@ -9,19 +9,19 @@ import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Yeshwanth at Synopsis Global for study abroad guidance, student visa support, immigration services, and free counselling.",
+  description: "Contact Synopsis Global for overseas study, recruitment, immigration, and workforce consultancy.",
   keywords: siteConfig.keywords,
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact | Synopsis Global",
-    description: "Book a consultation with Synopsis Global.",
+    description: "Discuss your international education, recruitment, immigration, or workforce requirement with Synopsis Global.",
     url: "/contact",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Synopsis Global",
-    description: "Education, visa, and immigration counselling.",
+    description: "Overseas consultancy for study, recruitment, immigration, and workforce solutions.",
   },
 };
 
@@ -31,14 +31,14 @@ export default function ContactPage() {
       <section className="bg-[#16325B] py-20 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#B08D57]">Contact</p>
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">Start with a focused consultation</h1>
+          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">Start with a focused international consultation</h1>
         </div>
       </section>
       <section className="py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
           <Reveal>
             <div>
-              <SectionHeading align="left" title="Book a consultation" description="Share your details and our advisory team will review the best next step for your goal." />
+              <SectionHeading align="left" title="Request a consultation" description="Share your objective and our advisory team will recommend the most appropriate next step." />
               <ContactLeadForm />
               <InquiryButton variant="secondary" className="w-full">
                 Open Inquiry Form
@@ -70,15 +70,15 @@ export default function ContactPage() {
               <div className="border border-slate-200 bg-white p-6 shadow-sm">
                 <h2 className="text-2xl font-semibold text-[#16325B]">Inquiry Form</h2>
                 <p className="mt-3 text-sm leading-6 text-slate-600">
-                  Prefer a focused service inquiry? Open the reusable inquiry form and select the service you are interested in.
+                  Looking for support in a specific area? Use the inquiry form to tell us how we can help.
                 </p>
                 <InquiryButton className="mt-6 w-full">Send Service Inquiry</InquiryButton>
               </div>
               <div className="flex min-h-72 items-center justify-center border border-dashed border-slate-300 bg-slate-50 p-6 text-center">
                 <div>
                   <MapPin aria-hidden="true" className="mx-auto size-8 text-[#B08D57]" />
-                  <p className="mt-4 font-semibold text-[#16325B]">Google Maps Placeholder</p>
-                  <p className="mt-2 text-sm text-slate-600">Embed office location once the final address is confirmed.</p>
+                  <p className="mt-4 font-semibold text-[#16325B]">Synopsis Global, Hyderabad</p>
+                  <p className="mt-2 text-sm text-slate-600">Contact our team to arrange an in-person consultation or receive directions to our office.</p>
                 </div>
               </div>
             </aside>

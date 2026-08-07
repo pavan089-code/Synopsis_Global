@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: "Synopsis Global",
-  tagline: "Trusted guidance for study abroad, visas, and immigration pathways.",
+  tagline: "International guidance for study, careers, immigration, and workforce needs.",
   url: "https://synopsisglobal.com",
   phone: "+91 9642201234",
   whatsappNumber: "919642201234",
-  whatsappMessage: "Hello Synopsis Global, I would like to book free counselling for study abroad or immigration guidance.",
+  whatsappMessage: "Hello Synopsis Global, I would like to discuss an overseas study, recruitment, immigration, or workforce requirement.",
   email: "info@synopsisglobal.com",
   contactPerson: "Yeshwanth",
   address: "Synopsis Global Office, Hyderabad, India",
@@ -17,7 +17,8 @@ export const siteConfig = {
     "Student Visa",
     "Immigration Services",
     "Permanent Residency",
-    "Visa Counselling",
-    "International Education Consultancy",
+    "Overseas Recruitment",
+    "Workforce Solutions",
+    "International Mobility Consultancy",
   ],
 };

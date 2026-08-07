@@ -9,8 +9,8 @@ export function ProcessSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Process"
-            title="Clear workflows for students and applicants"
-            description="Every engagement follows a structured path so clients understand the next action, the required documents, and the expected decision points."
+            title="Clear workflows for international decisions"
+            description="Every engagement follows a structured path, so clients understand the next action, the required documentation, and the decision points ahead."
           />
         </Reveal>
         <div className="mt-12 grid gap-8 lg:grid-cols-2">

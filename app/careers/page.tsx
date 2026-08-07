@@ -33,7 +33,7 @@ export default function CareersPage() {
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#B08D57]">Careers</p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">Careers with Synopsis Global</h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-white/75">
-            Join a counselling-led team helping students and professionals plan international education, visa, and immigration pathways.
+            Join a client-focused team helping people and organisations navigate overseas education, recruitment, immigration, and workforce requirements.
           </p>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function CareersPage() {
             <SectionHeading
               eyebrow="Open opportunities"
               title="Roles within our advisory team"
-              description="We look for thoughtful communicators who understand documentation, student support, destination research, and careful client service."
+              description="We look for thoughtful professionals who value precise documentation, sound research, responsive client service, and ethical international advisory."
             />
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -77,7 +77,7 @@ export default function CareersPage() {
               align="left"
               eyebrow="Candidate registration"
               title="Submit your profile"
-              description="Resume files are stored locally for now under a dedicated uploads directory. The server action is isolated so cloud storage can be added later without changing the page contract."
+              description="Share your professional profile for consideration. Our team will review it against current and future opportunities within Synopsis Global."
             />
           </Reveal>
           <Reveal delay={0.08}>

@@ -9,28 +9,28 @@ export type ChoicePillar = {
 
 export const choicePillars: ChoicePillar[] = [
   {
-    title: "Personalized Counselling",
-    description: "Every student and applicant receives route planning shaped around profile, finances, destination, and long-term goals.",
+    title: "Customized Solutions",
+    description: "Every engagement is shaped around your operating model, priorities, and the outcomes that matter most to your business.",
     icon: UserCheck,
   },
   {
-    title: "Certified Experts",
-    description: "Experienced counsellors review eligibility, admissions requirements, visa criteria, and documentation with care.",
+    title: "Experienced Professionals",
+    description: "Our teams combine practical consulting experience with industry expertise to address complex business and technology challenges.",
     icon: ShieldCheck,
   },
   {
-    title: "Transparent Process",
-    description: "Clear timelines, document checklists, application milestones, and honest guidance at each decision point.",
+    title: "Client-Centric Delivery",
+    description: "Clear governance, accountable communication, and measurable milestones keep every program aligned with your goals.",
     icon: BadgeCheck,
   },
   {
-    title: "Global Partnerships",
-    description: "Access to education partners, visa guidance networks, and destination knowledge across leading study countries.",
+    title: "Global Delivery Model",
+    description: "Flexible delivery capability gives you access to the right expertise, coordinated support, and consistent quality across markets.",
     icon: Handshake,
   },
   {
-    title: "High Visa Success",
-    description: "Strong preparation standards help reduce avoidable gaps before applications reach admissions or visa review.",
+    title: "Trusted Partnerships",
+    description: "We build enduring relationships through strategic insight, dependable execution, and a shared commitment to long-term success.",
     icon: Globe2,
   },
 ];

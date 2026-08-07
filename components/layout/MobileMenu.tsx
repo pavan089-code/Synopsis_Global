@@ -21,7 +21,7 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
         type="button"
         onClick={() => setOpen((value) => !value)}
         className="inline-flex size-11 items-center justify-center rounded-xl border border-[#D9D6CF] text-[#16325B] transition hover:border-[#B08D57]"
-        aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+        aria-label={open ? "Close primary navigation menu" : "Open primary navigation menu"}
         aria-expanded={open}
       >
         {open ? <X aria-hidden="true" className="size-5" /> : <Menu aria-hidden="true" className="size-5" />}
@@ -48,7 +48,7 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
               );
             })}
             <InquiryButton className="mt-5 w-full" onClick={() => setOpen(false)}>
-              Book Free Counselling
+              Book Consultation
             </InquiryButton>
           </nav>
         </div>

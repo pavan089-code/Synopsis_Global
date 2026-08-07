@@ -3,24 +3,23 @@ import { Reveal } from "@/components/common/Reveal";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { companyStory, coreValues, mission, vision } from "@/data/about";
 import { countries } from "@/data/countries";
-import { siteConfig } from "@/data/site";
 import { choicePillars } from "@/data/whyChoose";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "Learn about Synopsis Global, our mission, vision, core values, global network, and professional advisory approach.",
-  keywords: siteConfig.keywords,
+  title: "About Our IT Solutions & Business Consulting Firm",
+  description: "Learn how Synopsis Global helps organizations achieve sustainable growth through technology consulting, digital transformation, talent solutions, and enterprise services.",
+  keywords: ["about Synopsis Global", "IT solutions company", "business consulting firm", "technology consulting partner", "digital transformation company", "enterprise services", "global delivery model"],
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Synopsis Global",
-    description: "A professional services company connecting talent, education, and global opportunities.",
+    description: "A trusted technology and business consulting partner helping organizations modernize, scale, and grow.",
     url: "/about",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "About Synopsis Global",
-    description: siteConfig.tagline,
+    description: "Technology consulting, talent solutions, enterprise services, and long-term business partnerships.",
   },
 };
 
@@ -30,14 +29,14 @@ export default function AboutPage() {
       <section className="bg-[#16325B] py-20 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#B08D57]">About us</p>
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">A trusted bridge between ambition and international opportunity</h1>
+          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">A trusted partner for technology-led business growth</h1>
         </div>
       </section>
 
       <section className="py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
           <Reveal>
-            <SectionHeading align="left" eyebrow="Company story" title="Built for clarity in complex global decisions" />
+            <SectionHeading align="left" eyebrow="Company overview" title="Built to turn business ambition into lasting advantage" />
           </Reveal>
           <Reveal>
             <div className="space-y-6 text-base leading-8 text-slate-600">
@@ -72,7 +71,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Core values"
               title="The standards behind every engagement"
-              description="Our values shape how we communicate, prepare documentation, advise families, and support applicants through high-stakes decisions."
+              description="Our values shape how we think, collaborate, deliver, and earn the confidence of every client and partner."
             />
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -97,9 +96,9 @@ export default function AboutPage() {
           <Reveal>
             <SectionHeading
               align="left"
-              eyebrow="Global reach"
-              title="Destination-aware support for international pathways"
-              description="Synopsis Global supports study, visa, and immigration planning across priority markets with practical guidance for each destination."
+              eyebrow="Global delivery"
+              title="Connected expertise for organizations operating across markets"
+              description="Our delivery model brings together the right expertise, responsive collaboration, and consistent standards to support clients wherever their priorities take them."
             />
           </Reveal>
           <Reveal delay={0.08}>
@@ -120,8 +119,8 @@ export default function AboutPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Why choose Synopsis Global"
-              title="A professional advisory partner for international decisions"
-              description="Our work combines global opportunity awareness with structured local execution, helping clients make decisions with confidence."
+              title="A partner built around your business outcomes"
+              description="We combine industry perspective, practical technology expertise, and accountable delivery to help organizations move forward with confidence."
             />
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

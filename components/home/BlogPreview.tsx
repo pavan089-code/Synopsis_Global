@@ -2,7 +2,12 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/common/Reveal";
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { blogPosts } from "@/data/blog";
+
+const blogPosts = [
+  { title: "Building a Practical Digital Transformation Roadmap", slug: "digital-transformation-roadmap", excerpt: "How leaders can connect business priorities, technology investment, and measurable delivery outcomes.", category: "Transformation Insights", readTime: "6 min read" },
+  { title: "Creating Resilient Technology Operations", slug: "resilient-technology-operations", excerpt: "Key considerations for strengthening service reliability, governance, and continuous improvement.", category: "Managed Services", readTime: "5 min read" },
+  { title: "The Talent Strategy Behind High-Performing Delivery", slug: "talent-strategy-delivery", excerpt: "Why the right blend of specialist capability, collaboration, and leadership makes the difference.", category: "Talent Solutions", readTime: "4 min read" },
+];
 
 export function BlogPreview() {
   return (
@@ -12,14 +17,14 @@ export function BlogPreview() {
           <Reveal>
             <SectionHeading
               align="left"
-              eyebrow="Blog"
-              title="Study abroad guides, visa updates, and scholarship insights"
-              description="Clear, practical articles for families, students, and professionals preparing for international education and mobility."
+              eyebrow="Insights"
+              title="Ideas for technology, transformation, and growth"
+              description="Practical perspectives for leaders navigating change, strengthening capability, and building long-term business value."
             />
           </Reveal>
           <Reveal>
             <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-[#16325B] transition hover:text-[#B08D57]">
-              View Articles
+              View Insights
               <ArrowUpRight aria-hidden="true" className="size-4" />
             </Link>
           </Reveal>
@@ -34,7 +39,7 @@ export function BlogPreview() {
                 <div className="mt-6 flex items-center justify-between border-t border-[#D9D6CF] pt-4 text-sm">
                   <span className="text-[#6B7280]">{post.readTime}</span>
                   <Link href="/blog" className="font-semibold text-[#16325B] transition hover:text-[#B08D57]">
-                    Read Guide
+                    Read Insight
                   </Link>
                 </div>
               </article>

@@ -10,8 +10,8 @@ const quickLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
-const studyLinks = ["University Selection", "Admissions", "SOP / LOR", "Scholarships", "Career Counselling"];
-const immigrationLinks = ["Student Visa", "Visitor Visa", "Work Visa", "Permanent Residency", "Documentation"];
+const studyLinks = ["Destination Strategy", "University Admissions", "Application Support", "Scholarship Planning", "Career Pathways"];
+const immigrationLinks = ["Student Visas", "Visitor Visas", "Work Visas", "Permanent Residency", "Documentation Review"];
 const destinationLinks = ["Canada", "Australia", "United Kingdom", "United States", "Germany", "New Zealand", "UAE"];
 
 export function Footer() {

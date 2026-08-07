@@ -6,11 +6,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Synopsis Global | International Education and Immigration Consultancy",
+    default: "Synopsis Global | Overseas Consultancy",
     template: "%s | Synopsis Global",
   },
   description:
-    "Synopsis Global guides students and professionals through study abroad, university admissions, visa counselling, and immigration pathways.",
+    "Synopsis Global is a premium overseas consultancy for study abroad, overseas recruitment, immigration, and workforce solutions.",
   keywords: ["Synopsis Global", ...siteConfig.keywords],
   alternates: {
     canonical: "/",

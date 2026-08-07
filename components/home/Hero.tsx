@@ -11,7 +11,7 @@ export function Hero() {
     <section className="relative overflow-hidden bg-[#16325B] text-white">
       <Image
         src="/images/hero-global-journey.png"
-        alt="Students and professionals beginning an international education journey"
+        alt="Synopsis Global technology and business consulting"
         fill
         priority
         sizes="100vw"
@@ -36,17 +36,17 @@ export function Hero() {
 
       <div className="relative mx-auto grid min-h-[720px] max-w-7xl items-center gap-14 px-6 py-24 sm:py-28 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
         <motion.div initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: "easeOut" }}>
-          <p className="mb-6 text-xs font-bold uppercase tracking-[0.26em] text-[#D7C19A]">Education and immigration consultancy</p>
+          <p className="mb-6 text-xs font-bold uppercase tracking-[0.26em] text-[#D7C19A]">Technology and business consulting</p>
           <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-normal sm:text-5xl lg:text-6xl">
-            Building Your Future Beyond Borders
+            Turning Technology into Business Advantage
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-white/82">
-            Guiding students and professionals through international education, visas, and immigration through trusted expertise, personalized counselling, and global opportunities.
+            Synopsis Global is a trusted technology and consulting partner helping organisations modernise operations, strengthen delivery, and create sustainable business value.
           </p>
           <div className="mt-11 flex flex-col gap-4 sm:flex-row">
-            <InquiryButton>Book Free Counselling</InquiryButton>
+            <InquiryButton>Talk to Our Experts</InquiryButton>
             <Button href="/services" variant="outline">
-              Explore Services
+              Explore Solutions
             </Button>
           </div>
         </motion.div>
@@ -59,10 +59,10 @@ export function Hero() {
         >
           <div className="grid gap-4 rounded-2xl border border-white/15 bg-[#16325B]/32 p-5 shadow-2xl shadow-black/10 backdrop-blur-md">
             {[
-              { item: "Study Abroad Guidance", icon: GraduationCap },
-              { item: "University Admissions", icon: Building2 },
-              { item: "Student and Work Visa Assistance", icon: FileCheck2 },
-              { item: "Immigration and PR Guidance", icon: Landmark },
+              { item: "Technology Consulting", icon: GraduationCap },
+              { item: "Digital Transformation", icon: Building2 },
+              { item: "Talent Solutions", icon: FileCheck2 },
+              { item: "Managed Services", icon: Landmark },
             ].map(({ item, icon: Icon }) => (
                 <div key={item} className="flex items-center gap-4 border-b border-white/12 py-4 text-sm font-semibold text-white/88 last:border-b-0">
                   <span className="flex size-10 items-center justify-center rounded-xl bg-[#B08D57] text-white shadow-sm">

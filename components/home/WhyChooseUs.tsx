@@ -1,6 +1,14 @@
+import { Globe2, Lightbulb, ShieldCheck, TrendingUp, UsersRound } from "lucide-react";
 import { Reveal } from "@/components/common/Reveal";
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { choicePillars } from "@/data/whyChoose";
+
+const choicePillars = [
+  { title: "Innovation with Purpose", description: "We focus innovation on the opportunities that can create meaningful value for your organisation.", icon: Lightbulb },
+  { title: "Experienced Teams", description: "Our teams bring practical expertise, sound judgment, and a delivery mindset to every engagement.", icon: UsersRound },
+  { title: "Customer Success", description: "We measure our contribution by the outcomes our clients achieve and the confidence they build over time.", icon: TrendingUp },
+  { title: "Global Delivery", description: "Flexible delivery models provide the reach, responsiveness, and governance complex programmes require.", icon: Globe2 },
+  { title: "Scalable Partnerships", description: "Our solutions and relationships are built to evolve with changing priorities, growth plans, and market conditions.", icon: ShieldCheck },
+];
 
 export function WhyChooseUs() {
   return (
@@ -9,8 +17,8 @@ export function WhyChooseUs() {
         <Reveal>
           <SectionHeading
             eyebrow="Why choose us"
-            title="Built for trust, clarity, and international outcomes"
-            description="Synopsis Global combines personalized counselling with careful documentation standards, helping students and applicants move forward with confidence."
+            title="The confidence to move from ambition to advantage"
+            description="Synopsis Global combines consulting insight, technology capability, and accountable delivery to help clients achieve sustainable progress."
           />
         </Reveal>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-5">

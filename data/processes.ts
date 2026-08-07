@@ -7,12 +7,12 @@ export type ProcessFlow = {
 export const processFlows: ProcessFlow[] = [
   {
     title: "For Students",
-    description: "A guided path from first consultation to confident departure planning.",
+    description: "A clear route from first conversation to confident study abroad preparation.",
     steps: ["Consultation", "University Selection", "Admission Support", "Visa Assistance", "Departure Guidance"],
   },
   {
-    title: "For Immigration",
-    description: "A careful pathway from eligibility review to document readiness and submission planning.",
+    title: "For Global Mobility",
+    description: "A careful route from eligibility review through documentation, application readiness, and next-step planning.",
     steps: ["Eligibility Review", "Route Planning", "Document Checklist", "Application Support", "Interview Preparation"],
   },
 ];

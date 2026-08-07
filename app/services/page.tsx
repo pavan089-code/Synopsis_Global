@@ -3,23 +3,31 @@ import { InquiryButton } from "@/components/common/InquiryButton";
 import { Reveal } from "@/components/common/Reveal";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { services } from "@/data/services";
-import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Services",
-  description: "Explore Synopsis Global services across study abroad counselling, university admissions, visa guidance, and immigration services.",
-  keywords: siteConfig.keywords,
+  title: "IT Solutions & Business Consulting Services",
+  description: "Synopsis Global provides technology consulting, digital transformation, talent, managed services, cloud infrastructure, and business advisory solutions for growing organizations.",
+  keywords: [
+    "IT solutions",
+    "business consulting",
+    "technology consulting",
+    "digital transformation",
+    "IT staffing",
+    "managed IT services",
+    "cloud infrastructure",
+    "business advisory",
+  ],
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Services | Synopsis Global",
-    description: "Study abroad, university admissions, visa guidance, and immigration services.",
+    title: "IT Solutions & Business Consulting | Synopsis Global",
+    description: "Strategic technology, talent, cloud, managed services, and business advisory solutions built for measurable growth.",
     url: "/services",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Synopsis Global Services",
-    description: "Study abroad, student visa, work visa, and immigration guidance.",
+    title: "IT Solutions & Business Consulting | Synopsis Global",
+    description: "Technology, talent, cloud, managed services, and business advisory solutions for modern organizations.",
   },
 };
 
@@ -29,7 +37,7 @@ export default function ServicesPage() {
       <section className="bg-[#16325B] py-20 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#B08D57]">Services</p>
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">Strategic support for every stage of global mobility</h1>
+          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl">Technology and business solutions designed to help organizations modernize, scale, and innovate</h1>
         </div>
       </section>
 

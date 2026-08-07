@@ -1,6 +1,12 @@
 import { AnimatedCounter } from "@/components/common/AnimatedCounter";
 import { Reveal } from "@/components/common/Reveal";
-import { statistics } from "@/data/statistics";
+
+const statistics = [
+  { value: 100, suffix: "+", label: "Enterprise Clients" },
+  { value: 250, suffix: "+", label: "Projects Delivered" },
+  { value: 12, suffix: "+", label: "Countries Served" },
+  { value: 98, suffix: "%", label: "Client Satisfaction" },
+];
 
 export function StatisticsSection() {
   return (

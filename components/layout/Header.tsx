@@ -9,11 +9,11 @@ import { MobileMenu } from "@/components/layout/MobileMenu";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Study Abroad", href: "/services#study-abroad" },
-  { label: "Immigration", href: "/services#immigration" },
-  { label: "Destinations", href: "/countries" },
-  { label: "Success Stories", href: "/success-stories" },
-  { label: "Blog", href: "/blog" },
+  { label: "Services", href: "/services" },
+  { label: "Industries", href: "/countries" },
+  // TODO: Link Solutions to its dedicated page when it is added in a future phase.
+  { label: "Solutions", href: "/services#solutions" },
+  { label: "Insights", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -62,7 +62,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <InquiryButton>Book Free Counselling</InquiryButton>
+          <InquiryButton>Book Consultation</InquiryButton>
         </div>
 
         <MobileMenu items={navItems} />
